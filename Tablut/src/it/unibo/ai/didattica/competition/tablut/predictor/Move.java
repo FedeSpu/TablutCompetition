@@ -1,12 +1,13 @@
 package it.unibo.ai.didattica.competition.tablut.predictor;
 
 public class Move {
+	
 	private int from_x;
 	private int from_y;
-	
+
 	private int to_x;
 	private int to_y;
-	
+
 	public Move(int from_x, int from_y, int to_x, int to_y) {
 		super();
 		this.from_x = from_x;
@@ -14,7 +15,7 @@ public class Move {
 		this.to_x = to_x;
 		this.to_y = to_y;
 	}
-	
+
 	public int getFrom_x() {
 		return from_x;
 	}
@@ -39,7 +40,7 @@ public class Move {
 	public void setTo_y(int to_y) {
 		this.to_y = to_y;
 	}
-	
-	
+
+
 
 }

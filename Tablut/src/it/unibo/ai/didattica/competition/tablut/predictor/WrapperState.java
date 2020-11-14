@@ -3,10 +3,10 @@ package it.unibo.ai.didattica.competition.tablut.predictor;
 import it.unibo.ai.didattica.competition.tablut.domain.State;
 
 public class WrapperState {
-	
+
 	private State state;
 	private int turn;
-	
+
 	public WrapperState(State state,int turn) {
 		this.state=state;
 		this.turn=turn;
@@ -27,8 +27,8 @@ public class WrapperState {
 	public void setTurn(int turn) {
 		this.turn = turn;
 	}
-	
-	
-	
+
+
+
 
 }
