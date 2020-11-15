@@ -21,7 +21,7 @@ public class AllMoves {
 					if (stato.getPawn(i, j).equalsPawn(State.Pawn.BLACK.toString())) {
 						boolean stop = false;
 						String from = stato.getBox(i, j);
-						for (int k = 0; k < i && !stop; k++) {
+						for (int k = i-1; k >= 0 && !stop; k--) {
 							String to = stato.getBox(k, j);
 							try {
 								tmp = new Action(from, to, State.Turn.BLACK);
@@ -47,7 +47,7 @@ public class AllMoves {
 							}
 						}
 						stop = false;
-						for (int k = 0; k < j && !stop; k++) {
+						for (int k = j-1; k >= 0 && !stop; k--) {
 							String to = stato.getBox(i, k);
 							try {
 								tmp = new Action(from, to, State.Turn.BLACK);
@@ -82,7 +82,7 @@ public class AllMoves {
 							|| stato.getPawn(i, j).equalsPawn(State.Pawn.KING.toString())) {
 						boolean stop = false;
 						String from = stato.getBox(i, j);
-						for (int k = 0; k < i && !stop; k++) {
+						for (int k = i-1; k >= 0 && !stop; k--) {
 							String to = stato.getBox(k, j);
 							try {
 								tmp = new Action(from, to, State.Turn.WHITE);
@@ -108,7 +108,7 @@ public class AllMoves {
 							}
 						}
 						stop = false;
-						for (int k = 0; k < j && !stop; k++) {
+						for (int k = j-1; k >= 0 && !stop; k--) {
 							String to = stato.getBox(i, k);
 							try {
 								tmp = new Action(from, to, State.Turn.WHITE);
